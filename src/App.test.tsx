@@ -8,7 +8,7 @@ describe("Task Manager", () => {
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { name: "Task Manager" }),
+      screen.getByRole("heading", { name: "Task Manager!!!" }),
     ).toBeInTheDocument();
   });
 
