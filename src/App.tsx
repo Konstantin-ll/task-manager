@@ -32,7 +32,7 @@ function App() {
 
   return (
     <main className="app">
-      <h1>Task Manager</h1>
+      <h1>Task Manager — CI test</h1>
       <p className="subtitle">Управляй своими задачами</p>
 
       <form onSubmit={handleSubmit} className="task-form">
