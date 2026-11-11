@@ -54,6 +54,7 @@ jobs:
 
   build:
     name: Vite Build
+    needs: [lint, test]
     runs-on: ubuntu-latest
 
     steps:
