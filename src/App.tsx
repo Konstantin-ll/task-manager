@@ -38,6 +38,7 @@ function App() {
       <form onSubmit={handleSubmit} className="task-form">
         <input
           type="text"
+          aria-label="Название задачи"
           placeholder="Например, встреча в 14:00"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
