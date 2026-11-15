@@ -12,6 +12,14 @@ describe("Task Manager", () => {
     ).toBeInTheDocument();
   });
 
+  it("поле ввода имеет доступное имя", () => {
+    render(<App />);
+
+    expect(
+      screen.getByRole("textbox", { name: "Название задачи" }),
+    ).toBeInTheDocument();
+  });
+
   it("позволяет добавлять задачу", async () => {
     const user = userEvent.setup();
 
